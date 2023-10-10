@@ -14,16 +14,19 @@
         <div id="header">
             <div class="container">
                 <nav>
-                    <img src="assets/images/logo.png" class="logo">
+                    <span class="logo">P.<b> F</b>olio</span>
                     <ul id="sidemenu">
-                        <li><a href="#header">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Service</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contract</a></li>
-                        <i class="fa fa-times" onclick="closemenu()"></i>
+                        <span class="toggleswitch">
+                            <i class="fa fa-sun-o" aria-hidden="true"></i>
+                            <i class="fa fa-moon-o" aria-hidden="true"></i>
+                        </span>
+                        <i class="fa fa-times menu" onclick="closemenu()"></i>
                     </ul>
-                    <i class="fa fa-bars" onclick="openmenu()"></i> 
+                    <i class="fa fa-bars menu" onclick="openmenu()"></i> 
                 </nav>
                 <div class="header-text">
                     <p>Web Developer</p>
@@ -40,7 +43,7 @@
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <img src="assets/images/user.jpg">
+                        <img src="assets/images/user.png">
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
@@ -90,15 +93,37 @@
                 <h1 class="sub-title">My Services</h1>
                 <div class="services-list">
                     <div>
-                        <i class="fa fa-camera-retro"></i>
-                        <h2>Web Design</h2>
-                        <p>need to add about service</p>
-                        <a href="#">Learn more</a>
+                        <i class="fa fa-laptop"></i>
+                        <h2>Software Developer</h2>
+                        <p>A versatile and collaborative software developer with a solid background in agile development and scrum 
+                            methodology. Skilled in planning, designing, coding, testing and documenting programs based on requirements 
+                            and specifications. Experienced in working with HESA systems and adhering to agreed standards, patterns, 
+                            architectures and constraints. Proficient in debugging and resolving issues in applications and facilitating the 
+                            build and release capability. A proactive and continuous learner who keeps up to date with technologies and 
+                            practices.</p>
+                        <a target="_blank" href="https://www.linkedin.com/in/susheelraai/">Learn more</a>
                     </div>
                     <div>
-                        <h2>Web Design</h2>
-                        <p>need to add about service</p>
-                        <a href="#">Learn more</a>
+                        <i class="fa fa-code"></i>
+                        <h2>Web Application Developer</h2>
+                        <p>A strong expertise in developing business-critical applications and experience in writing reusable components.
+                            Implemented APIs and RESTful services, and converted JavaScript applications to Angular applications. Skilled 
+                            in creating project designs, web applications, user stories and prototypes based on the client’s requirements. 
+                            Adept in coordinating with the testing team, resolving bugs, designing pipelines and leading the project 
+                            deployment.
+                            </p>
+                        <a target="_blank" href="https://www.linkedin.com/in/susheelraai/">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa fa-id-badge"></i>
+                        <h2>Software Intern</h2>
+                        <p>An intern with a deep understanding of Object Oriented Programming (OOP) concepts and SOLID principles. 
+                            Experienced in process modelling using UML, Sequence Diagrams, Flowcharts, Activity Diagrams and use cases 
+                            using UMLet tool. Skilled in writing unit tests using NUnit testing framework to ensure the quality and 
+                            functionality of user interfaces and back-end processing. Knowledgeable in web technologies such as HTML, 
+                            HTML5, XHTML, XML and JavaScript.
+                            </p>
+                        <a target="_blank" href="https://www.linkedin.com/in/susheelraai/">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -119,14 +144,16 @@
                         </div>
                     </div>
                     <div class="work">
-                        <img src="assets/images/work-2.png" > 
-                    </div>
-                    <div class="work">
-                        <img src="assets/images/work-3.png" > 
+                        <img src="assets/images/work-2.png" >
+                        <div class="layer">
+                            <h3>Portfolio Website</h3>
+                            <p>This guide will walk you through the process of creating a personal portfolio website using HTML, CSS, and JavaScript. This site can serve as my online resume or CV. It will feature my name and job title, along with an image of mine. It will also showcase my skills, work experience, and educational background. Additionally, the site will include a list of services I offer and a portfolio of my work. The footer of the site will contain my contact information and a contact form, the data from which can be received directly on my Google Sheets.</p>
+                            <a href="https://github.com/SusheelRaai/SusheelRaai.github.io"><i class="fa fa-external-link"></i></a>
+                        </div>
                     </div>
                 </div>
 
-                <a href="#" class="btn">See more</a>
+                <!--<a href="#" class="btn">See more</a>-->
             </div>
          </div>
 
@@ -137,7 +164,7 @@
                 <div class="row">
                     <div class="contact-left">
                         <h1 class="sub-title">Contact me</h1>
-                        <p><i class="fa fa-paper-plane"></i> raai.susheel@gmail.com</p>
+                        <p><i class="fa fa-paper-plane"></i> raaisusheelkumar@gmail.com</p>
                         <p><i class="fa fa-phone-square"></i> +44 7760204953</p>
                         <div class="social-icons">
                             <a href="https://www.linkedin.com/in/susheelraai/"><i class="fa fa-linkedin-square"></i></a>
@@ -146,12 +173,13 @@
                         <a href="assets/SUSHEEL_RAAI_CV.pdf" download class="btn btnCV">Download CV</a>
                     </div>
                     <div class="contact-right">
-                        <form>
+                        <form name="submit-to-google-sheet">
                             <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your Email" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
                             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                             <button type="submit" class="btn btnCV">Submit</button>
                         </form>
+                        <span id="msg"></span>
                     </div>
                 </div>
             </div>
@@ -160,6 +188,8 @@
                 <p>Copyright <i class="fa fa-copyright"></i> Susheel. Made by Easy Tutorials</p>
             </div>
         </div>
+
+<!--------------------------------------------- Scripts--------------------------------------------------------->
 
         <script>
             var tablinks = document.getElementsByClassName("tab-links");
@@ -177,6 +207,8 @@
                 document.getElementById(tabname).classList.add("active-tab");
             }
 
+            /*------------------------Side Menu script----------------------------------*/
+
             var sidemenu = document.getElementById("sidemenu");
 
             function openmenu(){
@@ -187,7 +219,7 @@
                 sidemenu.style.right = "-200px";
             }
 
-
+            /*------------------------Scroll to top----------------------------------*/
             var topview = document.getElementById("btnTop");
 
             window.onscroll = function() {scrollFunction()};
@@ -199,13 +231,38 @@
                 topview.style.display = "none";
             }
             }
-
-            // When the user clicks on the button, scroll to the top of the document
             function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
             }
 
+            /*------------------------Switching Theme(Dark or Light)----------------------------------*/
+
+            const toggleswitch = document.querySelector(".toggleswitch");
+            toggleswitch.addEventListener('click', function(){
+                document.body.classList.toggle('switch');
+            })
+
+
         </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx2tQmbunMkOvJJ0hOXu3hjGpIcvSdaaj5nlDvlO5jK_rbuO6jrzip4Deck-rNCoJvQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
     </body>
 </html>
