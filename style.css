@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    background: #080808;
+    background: #1C1C1C;
     color: #fff;
 }
 
@@ -34,7 +34,15 @@ nav{
 }
 
 .logo{
-  width: 140px;
+  text-decoration: none;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 500px;
+  color: var(#36454f);
+}
+
+.logo b{
+    color: #ff004f;
 }
 
 nav ul li{
@@ -109,6 +117,7 @@ nav ul li a:hover::after{
     font-size: 60px;
     font-weight: 600;
     color: #fff;
+    font-size: 40px;
 }
 
 .tab-titles{
@@ -136,7 +145,7 @@ nav ul li a:hover::after{
 }
 
 .tab-links.active-link::after{
-    width: 50%;
+    width: 100%;
 }
 
 .tab-contents ul li{
@@ -388,7 +397,7 @@ form .btnCV{
 
 /*----------------------------------css for small screens-------------------------*/
 
-nav .fa{
+nav .menu{
     display: none;
 }
 
@@ -404,7 +413,7 @@ nav .fa{
     .header-text h1{
         font-size: 30px;
     }
-    nav .fa{
+    nav .menu{
         display: block;
         font-size: 25px;
     }
@@ -425,16 +434,13 @@ nav .fa{
         margin: 25px;   
     }
 
-    nav ul .fa{
+    nav ul .menu{
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
     }
 
-    .sub-title{
-        font-size: 40px;
-    }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
     }
@@ -459,3 +465,142 @@ nav .fa{
         font-size: 14px;
     }
 }
+
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
+
+.toggleswitch{
+    position: relative;
+}
+
+.toggleswitch .fa{
+    position: absolute;
+    font-size: 18px;
+    margin-left: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.fa-moon-o{
+    display: none;
+    color: #fff;
+}
+
+.fa-moon-o{
+    display: none;
+    color: #fff;
+}
+
+.switch .fa-moon-o{
+    display: block;
+}
+
+.switch .fa-sun-o{
+    display: none;
+}
+
+
+/*---------------------------------------Lighter mode--------------------------------*/
+
+.switch{
+    background: #fff;
+}
+
+.switch .logo b{
+    color: #0101DF;
+}
+
+.switch .header-text h1 span{
+    color: #0101DF;
+}
+
+.switch .sub-title{
+    color:#0B3861;
+}
+.switch #about{
+    color: #141414;
+}
+
+.switch .tab-contents ul li span{
+    color: #0B3861;
+}
+
+.switch  .tab-links::after{
+    background: #0101DF;
+}
+
+.switch .services-list div:hover{
+    background: #0101DF;
+}
+
+.switch .layer{
+    background: linear-gradient(rgba(0,0,0,0.5),#0101DF);
+}
+
+.switch nav ul li a::after{
+    background: #0101DF;
+}
+
+.switch .layer a{
+    color: #0101DF;
+}
+
+.switch .btn{
+    border: 1px solid #0101DF;
+}
+
+.switch .btn:hover{
+    background: #0101DF;
+}
+
+.switch .contact-left p{
+    color: #141414;
+}
+
+.switch .contact-left p i{
+    color: #0101DF;
+}
+
+.switch .social-icons a:hover{
+    color: #0101DF;
+}
+
+.switch .social-icons a{
+    color: #0B3861;
+}
+
+.switch form input{
+    background: #F2F2F2;
+    color: #262626;
+}
+
+.switch form textarea{
+    background: #F2F2F2;
+    color: #262626;
+}
+
+.switch .btn.btnCV{
+    background: #0101DF;
+}
+
+.switch .copyright{
+    background: #F2F2F2;
+    color: #141414;
+}
+
+.switch .copyright i{
+    color: #0101DF;
+}
+
+.switch #btnTop{
+    color: #262626;
+  }
+  
+  .switch #btnTop:hover{
+      color: #0101DF;
+  }
