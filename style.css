@@ -22,6 +22,7 @@ body{
     background-position: center;
 }
 
+
 .container{
     padding: 10px 10%;
 }
@@ -93,11 +94,12 @@ nav ul li a:hover::after{
     color: #ababab;
 }
 
-.row{
+.container .row{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 
 .about-col-1{
     flex-basis: 35%;
@@ -149,13 +151,23 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li{
- list-style: none;
- margin: 10px 0;
+ margin: 15px 0;
+}
+
+.tab-contents ul span{
+    margin: 10px 0;
+    color: #b54769;
+    font-size: 14px;
 }
 
 .tab-contents ul li span{
     color: #b54769;
     font-size: 14px;
+}
+
+.tab-contents ul li p{
+    font-size: 14px;
+    text-align: justify;
 }
 
 .tab-contents{
@@ -164,8 +176,22 @@ nav ul li a:hover::after{
 
 .tab-contents.active-tab{
     display: block;
+    overflow-y: scroll;
+    max-height: 300px;
+    padding: 10px;
 }
 
+.learn-more, .service-learn-more{
+    font-size: 12px;
+    text-decoration: none;
+    color: #b54769;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.service-learn-more{
+    color: #fff;
+}
 /*--------------------services------------------------------*/
 
 #services{
@@ -199,13 +225,6 @@ nav ul li a:hover::after{
     margin-bottom: 15px;
 }
 
-.services-list div a{
-    font-size: 12px;
-    text-decoration: none;
-    color: #fff;
-    margin-top: 20px;
-    display: inline-block;
-}
 
 .services-list div:hover{
     background: #ff004f;
@@ -632,11 +651,15 @@ nav .menu{
 }
 
 .switch .tab-contents ul li span{
-    color: #0B3861;
+    color: #0101DF;
 }
 
 .switch  .tab-links::after{
     background: #0101DF;
+}
+
+.switch .learn-more{
+    color: #0101DF;
 }
 
 .switch .services-list div:hover{
