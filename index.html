@@ -60,14 +60,17 @@
                             <p class="tab-links" onclick="opentab('experience')">PROFESSIONAL EXPERIENCE</p>
                             <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
                         </div>
-                        <div class="tab-contents active-tab" id="skills">
+                        <div class="tab-contents active-tab has-scrollbar" id="skills">
                             <ul>
-                                <li><span>Frame works</span><br>Software Developer</li>
-                                <li><span>Programming languages</span><br>C#</li>
-                                <li><span>Cloud</span><br>Intern</li>
+                                <li><span>Frame works</span><br><P>As a software developer, I specialize in building robust and scalable web applications using a combination of ASP.Net for server-side programming, ASP.NET MVC for implementing the Model-View-Controller design pattern, ASP.NET Web API for creating HTTP services, Bootstrap for responsive UI design, and Angular for dynamic front-end functionalities.</P></li>
+                                <li><span>Programming languages</span><br><P>I leverage the power of programming languages like C# for server-side logic, HTML for structuring the web content, and JavaScript for creating interactive elements, providing a comprehensive and dynamic user experience.</P></li>
+                                <li><span>Relational Database</span><br><P>I employ SQL Server and MySQL, two powerful relational database management systems, to design, implement, and manage complex databases, ensuring efficient data storage and retrieval.</P></li>
+                                <li><span>Cloud</span><br><p>I utilize Microsoft Azure and Amazon Web Services (AWS) to build, deploy, and manage applications through their global network of data centers, providing scalable and reliable cloud solutions.</p></li>
+                                <li><span>Non-Technical</span><br><p>As a software developer, I not only excel in technical competencies but also demonstrate strong leadership qualities, effective presentation skills, and sharp analytical abilities, which are crucial for problem-solving and team collaboration.</p></li>
                             </ul>
+                            <a class="learn-more" target="_blank" href="https://www.linkedin.com/in/susheelraai/">Learn more</a>
                         </div>
-                        <div class="tab-contents" id="experience">
+                        <div class="tab-contents has-scrollbar" id="experience">
                             <ul>
                                 <li><span>Aug 2022 - Present</span><br>Software Developer at HESA / Jisc</li>
                                 <li><span>Sept 2018 - Dec 2020</span><br>Software Developer at ZenQ</li>
@@ -75,7 +78,7 @@
                             </ul>
                         </div>
 
-                        <div class="tab-contents" id="education">
+                        <div class="tab-contents has-scrollbar" id="education">
                             <ul>
                                 <li><span>Feb 2021 - Feb 2022</span><br> MSc from University of East Anglia </li>
                                 <li><span>Sept 2014 - Jun 2018</span><br>B.Tech from CMR College of Engineering and Technology (JNTUH)</li>
@@ -101,7 +104,7 @@
                             architectures and constraints. Proficient in debugging and resolving issues in applications and facilitating the 
                             build and release capability. A proactive and continuous learner who keeps up to date with technologies and 
                             practices.</p>
-                        <a target="_blank" href="https://www.linkedin.com/in/susheelraai/">Learn more</a>
+                        <a class="service-learn-more" target="_blank" href="https://www.linkedin.com/in/susheelraai/">Learn more</a>
                     </div>
                     <div>
                         <i class="fa fa-code"></i>
@@ -112,7 +115,7 @@
                             Adept in coordinating with the testing team, resolving bugs, designing pipelines and leading the project 
                             deployment.
                             </p>
-                        <a target="_blank" href="https://www.linkedin.com/in/susheelraai/">Learn more</a>
+                        <a class="service-learn-more" target="_blank" href="https://www.linkedin.com/in/susheelraai/">Learn more</a>
                     </div>
                     <div>
                         <i class="fa fa-id-badge"></i>
@@ -123,7 +126,7 @@
                             functionality of user interfaces and back-end processing. Knowledgeable in web technologies such as HTML, 
                             HTML5, XHTML, XML and JavaScript.
                             </p>
-                        <a target="_blank" href="https://www.linkedin.com/in/susheelraai/">Learn more</a>
+                        <a class="service-learn-more" target="_blank" href="https://www.linkedin.com/in/susheelraai/">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -152,8 +155,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!--<a href="#" class="btn">See more</a>-->
             </div>
          </div>
 
@@ -174,7 +175,7 @@
                 </div>
               </div>
               <div class="certificate-item">
-                  <img src="assets/images/certificate2.png">
+                  <img src="assets/images/Certificate2.png">
                   <div class="layer">
                     <h3>freeCodeCamp <i class="fa fa-free-code-camp"></i></h3>
                     <p>Front End Development Libraries developer certification</p>
@@ -182,7 +183,7 @@
                 </div>
               </div>
               <div class="certificate-item">
-                  <img src="assets/images/certificate3.png" >
+                  <img src="assets/images/Certificate3.png" >
                   <div class="layer">
                     <h3>HackerRank <b>H</b><span class="rectangle"></span></h3>
                     <p>SQL Certification developer certification</p>
@@ -198,7 +199,7 @@
                 </div>
               </div>
               <div class="certificate-item">
-                  <img src="assets/images/certificate5.png" >
+                  <img src="assets/images/Certificate5.png" >
                   <div class="layer">
                     <h3>Microsoft </h3><span class="microsoft"></span>
                     <p>Microsoft Certified: Azure Fundamentals issue by Microsoft</p>
@@ -215,8 +216,8 @@
               </div>
             </div>
         </div>
-     </div>
-
+     </div><br><br><br><br>
+    
 <!-------------------------------------Contact-------------------------------------------->
 
         <div id="contact">
@@ -302,10 +303,7 @@
             toggleswitch.addEventListener('click', function(){
                 document.body.classList.toggle('switch');
             })
-
-
         </script>
-
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbx2tQmbunMkOvJJ0hOXu3hjGpIcvSdaaj5nlDvlO5jK_rbuO6jrzip4Deck-rNCoJvQ/exec'
     const form = document.forms['submit-to-google-sheet']
