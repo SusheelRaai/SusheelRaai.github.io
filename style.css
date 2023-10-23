@@ -558,6 +558,10 @@ nav .menu{
     .copyright{
         font-size: 14px;
     }
+    .switch nav ul{
+        background: #0101DF;
+    }
+    
 }
 
 #msg{
@@ -640,9 +644,6 @@ nav .menu{
     background: linear-gradient(rgba(0,0,0,0.5),#0101DF);
 }
 
-.switch nav ul{
-    background: #0101DF;
-}
 
 .switch nav ul li a::after{
     background: #0101DF;
