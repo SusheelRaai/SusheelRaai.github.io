@@ -22,6 +22,108 @@ body{
     background-position: center;
 }
 
+video{
+    padding-top: 20px;
+    width: 100%;
+    height: 100vh;
+}
+
+/*------------------------------arrow-------------------------------*/
+
+.scene .arrow {
+    position: absolute;
+    top: 75%;
+    right: 7%;
+    transform: translate(-50%, -50%);
+    transform: rotate(270deg);
+    cursor: pointer;
+}
+
+
+.scene .arrow span {
+    display: block;
+    width: 2.5vw;
+    height: 2.5vw;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.scene .arrow span:nth-child(1) {
+    animation-delay: -0.2s;
+    border-bottom: 3px solid #e2dbde;
+    border-right: 3px solid #e2dbde;
+    
+}
+
+.scene .arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+    border-bottom: 5px solid #deb3c2;
+    border-right: 5px solid #deb3c2;
+    
+}
+
+.scene .arrow span:nth-child(3) {
+    animation-delay: -0.2s;
+    border-bottom: 5px solid #c97a94;
+    border-right: 10px solid #c97a94;
+}
+
+.scene .arrow span:nth-child(4) {
+    animation-delay: -0.4s;
+    border-bottom: 5px solid #ff004f;
+    border-right: 15px solid #ff004f;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+/*----------------------------Flipping------------------------------*/
+
+.scene {
+    display: inline-block;
+  /*   border: 1px solid #CCC; */
+  width: 100%;
+  height: 100vh;
+  }
+  
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+  }
+
+  .card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+
+  .card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .card__face--back {
+    transform: rotateY(180deg);
+  }
+
+/*----------------------------------------------------------*/
 
 .container{
     padding: 10px 10%;
@@ -611,6 +713,36 @@ nav .menu{
 
 .switch{
     background: #fff;
+}
+
+.switch .scene .btn{
+ border: #262626;
+}
+
+.switch .scene .arrow span:nth-child(1) {
+    animation-delay: -0.2s;
+    border-bottom: 3px solid #e1e1ea;
+    border-right: 3px solid #e1e1ea;
+    
+}
+
+.switch .scene .arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+    border-bottom: 5px solid #8f8fbc;
+    border-right: 5px solid #8f8fbc;
+    
+}
+
+.switch .scene .arrow span:nth-child(3) {
+    animation-delay: -0.2s;
+    border-bottom: 5px solid #5656c4;
+    border-right: 10px solid #5656c4;
+}
+
+.switch .scene .arrow span:nth-child(4) {
+    animation-delay: -0.4s;
+    border-bottom: 5px solid #0101DF;
+    border-right: 15px solid #0101DF;
 }
 
 .switch .logo b{
