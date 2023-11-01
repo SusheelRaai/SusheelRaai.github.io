@@ -594,6 +594,9 @@ nav .menu{
 }
 
 @media only screen and (max-width: 600px){
+    .scene{
+        display: none;
+    }
     #header{
         background-image: url(assets/images/Phonebackground.png);
     }
