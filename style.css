@@ -595,8 +595,9 @@ nav .menu{
 
 @media only screen and (max-width: 600px){
     .scene{
-        display: none;
+        display: block;
     }
+    
     #header{
         background-image: url(assets/images/Phonebackground.png);
     }
@@ -614,6 +615,7 @@ nav .menu{
     }
     
     nav ul{
+        display: none;
         background: #ff004f;
         position: fixed;
         top: 0;
@@ -634,8 +636,41 @@ nav .menu{
         top: 25px;
         left: 25px;
         cursor: pointer;
-    }
+    } 
 
+    .scene .arrow {
+        top: 80%;
+        right: 15%;
+    }
+    
+    .scene .arrow span {
+        width: 5vw;
+        height: 5vw;
+        margin: -5px;
+    }
+    
+    .scene .arrow span:nth-child(1) {
+        border-bottom: 5px solid #fff;
+        border-right: 5px solid #fff;
+        
+    }
+    
+    .scene .arrow span:nth-child(2) {
+        border-bottom: 5px solid #fff;
+        border-right: 5px solid #fff;
+        
+    }
+    
+    .scene .arrow span:nth-child(3) {
+        border-bottom: 5px solid #fff;
+        border-right: 5px solid #fff;
+    }
+    
+    .scene .arrow span:nth-child(4) {
+        border-bottom: 5px solid #fff;
+        border-right: 5px solid #fff;
+    }
+    
     .about-col-1, .about-col-2{
         flex-basis: 100%;
     }
@@ -646,6 +681,7 @@ nav .menu{
 
     .about-col-2{
         font-size: 14px;
+        margin-left: -20px;
     }
 
     .tab-links{
@@ -667,6 +703,7 @@ nav .menu{
     .copyright{
         font-size: 14px;
     }
+
     .switch nav ul{
         background: #0101DF;
     }
