@@ -656,19 +656,19 @@ nav .menu{
     }
     
     .scene .arrow span:nth-child(2) {
-        border-bottom: 5px solid #fff;
-        border-right: 5px solid #fff;
+        border-bottom: 5px solid #deb3c2;
+        border-right: 5px solid #deb3c2;
         
     }
     
     .scene .arrow span:nth-child(3) {
-        border-bottom: 5px solid #fff;
-        border-right: 5px solid #fff;
+        border-bottom: 5px solid #c97a94;
+        border-right: 5px solid #c97a94;
     }
     
     .scene .arrow span:nth-child(4) {
-        border-bottom: 5px solid #fff;
-        border-right: 5px solid #fff;
+        border-bottom: 5px solid #ff004f;
+        border-right: 5px solid #ff004f;
     }
     
     .about-col-1, .about-col-2{
